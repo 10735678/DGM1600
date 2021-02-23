@@ -1,3 +1,33 @@
-h1 {
-    color: navy;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navlist {
+    display: flex;
+    list-style-type: none;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: grey;
+    color: white;
 }
