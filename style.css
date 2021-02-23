@@ -17,7 +17,7 @@ body {
   justify-content: flex-end;
   position: fixed;
   width: 100%;
-  background-color:#4B585E;
+  background-color:#585459;
 }
 
 .navlist {
@@ -26,7 +26,6 @@ body {
 }
 
 .navlist a {
-    /*display: block;*/
     font-size: 1.5em;
     padding: .5em;
     text-decoration: none;
@@ -47,6 +46,12 @@ body {
   height: 100vh;
   background-color:#96B6DF;
   color: white;
+}
+
+#projectbreak {
+    background-color: #8C2742;
+    height: 20px;
+    border: 20px;
 }
 
 .projects-grid {
@@ -74,11 +79,10 @@ figcaption{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
-a {
-    text-decoration: none;
-}
+
 
 #footerbreak {
     background-color: #A65A49;
@@ -90,6 +94,10 @@ a {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+}
+
+a {
+    text-decoration: none;
 }
 
 @media (max-width: 1200px)
@@ -106,10 +114,12 @@ a {
     }
 }
 
-@media (max-width: 460px) 
+@media (max-width: 500px) 
 {
+    #welcome-section
+    {background-color: #400C1A;}
     html {
         font: 50%;
-        background-color: lightblue;
+        background-color: #96B3D9;
     }
 }
