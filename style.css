@@ -15,6 +15,9 @@ body {
 #navbar {
   display: flex;
   justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+  background-color:#4B585E;
 }
 
 .navlist {
@@ -23,16 +26,17 @@ body {
 }
 
 .navlist a {
-    display: block;
+    /*display: block;*/
     font-size: 1.5em;
     padding: .5em;
     text-decoration: none;
+    color: white;
 }
 
 .navlist a:hover {
     transform: translateY(-4px);
     transition: transform 0.3s ease-out;
-    background-color: lightgray;
+    /*background-color: lightgray;*/
 }
 
 #welcome-section {
@@ -41,7 +45,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: grey;
+  background-color:#96B6DF;
   color: white;
 }
 
@@ -61,6 +65,8 @@ figure {
 
 figcaption{
     text-align: center;
+    background-color: #4B585E;
+    color: white;
     
 }
 
@@ -68,5 +74,42 @@ figcaption{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+a {
     text-decoration: none;
+}
+
+#footerbreak {
+    background-color: #A65A49;
+    height: 20px;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+@media (max-width: 1200px)
+{
+    html {
+        font-size: 100%;
+    }
+}
+
+@media (max-width: 980px)
+{
+    html {
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 460px) 
+{
+    html {
+        font: 50%;
+        background-color: lightblue;
+    }
 }
