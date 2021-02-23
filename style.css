@@ -31,3 +31,12 @@ body {
     background-color: grey;
     color: white;
 }
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+figure {
+    margin: 1rem;
+}
