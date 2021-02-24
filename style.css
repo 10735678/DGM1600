@@ -18,6 +18,7 @@ body {
   position: fixed;
   width: 100%;
   background-color:#585459;
+  z-index: 9999;
 }
 
 .navlist {
@@ -35,6 +36,7 @@ body {
 .navlist a:hover {
     transform: translateY(-4px);
     transition: transform 0.3s ease-out;
+    color: #9ABBD9;
     /*background-color: lightgray;*/
 }
 
@@ -46,6 +48,7 @@ body {
   height: 100vh;
   background-color:#96B6DF;
   color: white;
+  font-size: 30px;
 }
 
 #projectbreak {
@@ -59,10 +62,20 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+.projects-grid a:hover {
+    transform: translateY(-4px);
+    transform: scale(1.1);
+    transition: transform 0.3s ease-out;
+    color: #9ABBD9;
+    
+}
 
 .project-tile {
     text-decoration: none;
+    
 }
+
+
 
 figure {
   margin: 1rem;
@@ -72,16 +85,40 @@ figcaption{
     text-align: center;
     background-color: #4B585E;
     color: white;
+    border-radius: 3px;
+    position: relative;
+    top: -6px;
     
+}
+
+figcaption:hover {
+    color:#96B3D9;
 }
 
 #contact {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    justify-content: space-evenly;
+    /*padding: 20px;*/
+    height: 100px;
+    /*background-color: #556773;*/
 }
 
+.contact-details a {
+    margin: 0 12px;
+    color: #556773;
+}
+
+.contact-details :hover
+{
+    color: #A65A49;
+}
+
+
+.contact-me{
+    text-align: center;
+}
 
 
 #footerbreak {
