@@ -1,3 +1,7 @@
-const message = 'Hello World!'
+import { films } from '../data/films.js'
 
-console.log(message);
+let itemOne = document.querySelector('#item1');
+
+itemOne.textContent = films[2].title;
+
+console.log(films[0].title);
