@@ -82,4 +82,3 @@ function myFunction() {
 function sumTwoThings(one, two) {
     return one + two;
 }
-//2/25 CodePen
