@@ -82,3 +82,10 @@ function myFunction() {
 function sumTwoThings(one, two) {
     return one + two;
 }
+
+// Arrow Functions
+
+const theFunction = () => 'I am awesome!'
+
+// a higher order Function is a function that accepts another function as a parameter.
+//filter, map and redu e are the most popular, but forEach, every, find, and some are also HOFs

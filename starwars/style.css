@@ -17,7 +17,7 @@ figure {
 }
 
 figcaption {
-    text-align: center;
-    background-color: rgb(0, 0, 0);
-    color: #ffffff;
+    text-align:center;
+    background-color:black;
+    color: #fff;
 }
