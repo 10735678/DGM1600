@@ -36,7 +36,8 @@ body {
 .navlist a:hover {
     transform: translateY(-4px);
     transition: transform 0.3s ease-out;
-    color: #9ABBD9;
+    /*color: #9ABBD9;*/
+    color: #00213f;
     /*background-color: lightgray;*/
 }
 
