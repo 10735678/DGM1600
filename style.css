@@ -17,8 +17,8 @@ body {
   justify-content: flex-end;
   position: fixed;
   width: 100%;
-  /*background-color:#585459;*/
-  background-color:#510664;
+  background-color:#585459;
+  
   z-index: 9999;
 }
 
@@ -37,8 +37,7 @@ body {
 .navlist a:hover {
     transform: translateY(-4px);
     transition: transform 0.3s ease-out;
-    /*color: #9ABBD9;*/
-    color: #00213f;
+    color: #9ABBD9;
     /*background-color: lightgray;*/
 }
 
