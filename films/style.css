@@ -16,6 +16,11 @@ figure {
     margin: 1em;
 }
 
+figure:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-out;
+}
+
 figcaption {
     text-align:center;
     background-color:black;

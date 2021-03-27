@@ -10,4 +10,16 @@
 
 figure > img {
     height: 200px;
+    border-radius: 1rem;
+    margin: 3px;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+}
+
+figure > img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-out;
+}
+
+figcaption {
+    text-align: center;
 }
