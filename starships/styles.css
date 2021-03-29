@@ -6,7 +6,13 @@
 
 main {
     display: flex;
-    height: 100vh;
+    height: 120vh;
+}
+
+.shipView {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .message-text {
@@ -19,6 +25,12 @@ main {
 img, nav {
     z-index: 1;
     position: relative;
+    display: flex;
+    padding: 20px;
+}
+
+img {
+    padding: 100px;
 }
 
 a {
@@ -28,4 +40,10 @@ a {
 
 li {
     list-style-type: none;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 20px 20px 10px 50px;
+    color: yellow;
 }
