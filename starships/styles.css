@@ -6,6 +6,19 @@
 
 main {
     display: flex;
+    height: 100vh;
+}
+
+.message-text {
+    text-align: center;
+    font-size: x-large;
+    font-weight: 700;
+    color: black;
+}
+
+img, nav {
+    z-index: 1;
+    position: relative;
 }
 
 a {
