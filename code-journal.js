@@ -89,3 +89,28 @@ const theFunction = () => 'I am awesome!'
 
 // a higher order Function is a function that accepts another function as a parameter.
 //filter, map and redu e are the most popular, but forEach, every, find, and some are also HOFs
+
+//Filter method example. Filter returns an array of all elements that 'pass the test'
+
+const pilots = [
+    {
+        id: 2,
+        name: "Wedge Antilles",
+        faction: "Rebels",
+    },
+    {
+        id:8,
+        name: "Ciena Ree",
+        faction: "Empire",
+    },
+    {
+        id: 40,
+        name: "Iden Versio",
+        faction: "Empire"
+    },
+    {
+        id: 66,
+        name: "Thane Kyrell",
+        faction: "Rebels"
+    }
+];
