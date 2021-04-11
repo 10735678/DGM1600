@@ -1,7 +1,7 @@
 import { senators } from '../data/senators.js'
 import { representatives } from '../Data/representatives.js'
 
-console.log(senators.length, representatives.length)
+//console.log(senators.length, representatives.length)
 
 const congressGrid = document.querySelector('.congressGrid')
 const seniorityButton = document.querySelector('#seniorityButton')
