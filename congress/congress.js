@@ -1,5 +1,7 @@
-import {representatives} from '../Data/representatives.js'
+import { senators } from '../data/senators.js'
+import { representatives } from '../Data/representatives.js'
 
+console.log(senators.length, representatives.length)
 
 const congressGrid = document.querySelector('.congressGrid')
 const seniorityButton = document.querySelector('#seniorityButton')
@@ -10,7 +12,7 @@ function populateCongressDiv(somearray) {
         let personDiv = document.createElement('div')
         let personFig = document.createElement('figure')
         let figImg = document.createElement('img')
-        let figCaption = document = document.createElement('figcaption')
+        let figCaption = document.createElement('figcaption')
 
         figCaption.textContent = person.name
     })
