@@ -1,9 +1,28 @@
 import { senators } from '../data/senators.js'
 import { representatives } from '../Data/representatives.js'
 
+const repubButton = document.querySelector('#republicans')
+
+repubButton.addEventListener('click', () => {
+    showRepublicans()
+})
+
+function showRepublicans() {
+    //const repubs = representatives.filter(rep => rep.party === 'R')
+    const repubs = representatives.map(rep => {
+        let smallRepub = {}
+    if (rep.party === 'R') {
+        smallRepub.id = rep.id,
+            smallRepub.name = `${rep.first_name} ${rep.middle_name} ${rep.last_name}`
+        }
+        return smallRepub
+})
+    console.log(repubs)
+}
+
 //console.log(senators.length, representatives.length)
 
-const congressGrid = document.querySelector('.congressGrid')
+/*const congressGrid = document.querySelector('.congressGrid')
 const seniorityButton = document.querySelector('#seniorityButton')
 const birthdayButton = document.querySelector('#birthdayButton')
 
@@ -25,6 +44,6 @@ function getSimplifiedPeople(peopleList) {
             name: person.first_name
         }
     })
-}
+}*/
 
-populateCongressDiv(getSimplifiedPeople(representatives))
+//populateCongressDiv(getSimplifiedPeople(representatives))
