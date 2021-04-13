@@ -18,7 +18,7 @@ body {
   position: fixed;
   width: 100%;
   background-color:#585459;
-  
+  box-shadow: 0px 10px 20px rgb(7, 7, 7);
   z-index: 9999;
 }
 
@@ -38,6 +38,7 @@ body {
     transform: translateY(-4px);
     transition: transform 0.3s ease-out;
     color: #9ABBD9;
+    text-shadow: 0px 10px 5px black;
     /*background-color: lightgray;*/
 }
 
@@ -50,6 +51,10 @@ body {
   background-color:#96B6DF;
   color: white;
   font-size: 30px;
+}
+
+#me {
+    box-shadow: 0px 0px 40px rgb(0, 0, 0);
 }
 
 #projectbreak {
@@ -159,6 +164,5 @@ a {
     html {
         font: 50%;
         background-color: #96B3D9;
-        box-shadow: 10px 5px 5px black;
     }
 }
