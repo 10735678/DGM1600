@@ -123,7 +123,7 @@ figcaption:hover {
 
 
 #footerbreak {
-    background-color: #A65A49;
+    background-color: #8C2742;
     height: 20px;
 }
 
@@ -159,5 +159,6 @@ a {
     html {
         font: 50%;
         background-color: #96B3D9;
+        box-shadow: 10px 5px 5px black;
     }
 }
