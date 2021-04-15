@@ -3,25 +3,53 @@
     box-sizing: border-box;
 }
 
+h1 {
+    text-align: center;
+}
+
+.buttonHeader {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16px;
+}
+
+.buttons {
+    height: 50px;
+    width: 100px;
+}
+
 .congressGrid {
     display: flex;
     flex-wrap: wrap;
     margin: 1rem;
+    
 }
 
 .figureDiv {
     margin: .5em;
     padding: 5px;
-    border: 1px solid red;
-    box-shadow: 3px 3px 3px black;
+    
 }
 
 figure {
     display: flex;
     flex-direction: column;
-    width: 100px;
+    width: 125px;
+    
 }
 
 figcaption {
     text-align: center;
+}
+
+img {
+    border-radius: 10%;
+    box-shadow: 1px 1px 3px black;
+    margin: 5px;
+}
+
+.buttons {
+    color: white;
+    background-color: navy;
+    border-radius: 5%;
 }
