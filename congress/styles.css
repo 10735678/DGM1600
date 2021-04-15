@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.congressGrid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.figureDiv {
+    margin: 1em;
+}
