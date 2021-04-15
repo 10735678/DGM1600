@@ -10,5 +10,18 @@
 }
 
 .figureDiv {
-    margin: 1em;
+    margin: .5em;
+    padding: 5px;
+    border: 1px solid red;
+    box-shadow: 3px 3px 3px black;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+figcaption {
+    text-align: center;
 }
