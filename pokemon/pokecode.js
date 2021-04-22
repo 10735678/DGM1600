@@ -34,7 +34,7 @@ function populatePokecard(singlePokemon) {
     
     pokeCard.appendChild(populateCardFront(singlePokemon))
 
-
+    pokeCard.appendChild(populateCardBack(singlePokemon))
 
     pokeScene.appendChild(pokeCard)
     pokeGrid.appendChild(pokeScene)
@@ -43,7 +43,7 @@ function populatePokecard(singlePokemon) {
 
 function populateCardFront(pokemon) {
     let pokeFront = document.createElement('div')
-    pokeFront.className = 'card_face card_face--front'
+    pokeFront.className = 'card_face card_face-front'
     let frontLabel = document.createElement('p')
     frontLabel.textContent = pokemon.name
     let frontImage = document.createElement('img')
@@ -52,3 +52,12 @@ function populateCardFront(pokemon) {
     pokeFront.appendChild(frontLabel)
     return pokeFront
 }
+
+function populateCardBack(pokemon) {
+    let pokeBack = document.createElement('div')
+    pokeBack.className = 'card_face card_face-back'
+    let backLabel = document.createElement('p') 
+        backLabel.textContent = `Back of card`
+        pokeBack.appendChild(backLabel)
+        return pokeBack
+    }
