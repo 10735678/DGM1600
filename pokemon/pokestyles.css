@@ -7,10 +7,12 @@
 .pokeGrid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .scene {
     width: 200px;
     height: 260px;
     border: 1px solid navy;
+    margin: 5px;
 }
