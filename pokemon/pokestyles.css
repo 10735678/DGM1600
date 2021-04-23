@@ -7,12 +7,20 @@
 
 .buttons {
     background-color: #999;
+    color: white;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
     height: 60px;
     border-radius: 10px;
     margin: 20px;
+    font-size: 120%;
+    text-align:center;
+    padding: 15px;
+}
+
+.buttons:hover {
+    color: navy;
 }
 
 header {
