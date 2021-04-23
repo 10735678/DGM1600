@@ -42,6 +42,7 @@
     font-weight: bold;
     backface-visibility: hidden;
     
+    
 }
 
 .card_face-front {
@@ -59,8 +60,48 @@
     background: #333;
     background-image: url(/images/cardback.png);
     transform: rotateY(180deg);
-    color: yellow;
+    color: white;
+    font-size: 220%;
+    padding-top: 130px;
     display: flex;
     justify-content:end;
     flex-direction: column;
+    
+}
+
+
+.fire {
+    background-color: red;
+}
+
+.grass {
+    background-color: green;
+}
+
+.bug {
+    background-color: lightgreen;
+}
+
+.poison {
+    background-color: purple;
+}
+
+.water {
+    background-color: blue;
+}
+
+.ground {
+    background-color: yellow;
+}
+
+.electric {
+    background-color: yellow;
+}
+
+.fairy {
+    background-color: pink;
+}
+
+.normal {
+    background-color: rgb(95, 47, 3);
 }

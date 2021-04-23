@@ -88,6 +88,7 @@ function populateCardFront(pokemon) {
     frontImage.src = `images/${getImageFileName(pokemon)}.png`
     pokeFront.appendChild(frontImage)
   //pokeFront.appendChild(frontLabel)
+    
     return pokeFront
 }
 
@@ -99,6 +100,15 @@ function populateCardBack(pokemon) {
     let backLabel = document.createElement('p') 
         backLabel.textContent = pokemon.name /*`Moves: ${pokemon.moves.length}`*/
         pokeBack.appendChild(backLabel)
+
+        pokemon.types.forEach((pokeType) => {
+            let backType = document.createElement('p')
+            backType.textContent = pokeType.type.name;
+            pokeBack.appendChild(backType)
+            pokeBack.classList.add(pokemon.types[0].type.name)
+            pokeBack.classList.add(pokemon.types[0].className)
+        })
+
         return pokeBack
     }
 
