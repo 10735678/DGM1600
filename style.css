@@ -12,6 +12,43 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/*trying a new nav bar*/
+    @media only screen and (min-width: 601px) {
+    nav {
+    /*background-image: url(images/headergradient.gif);*/
+    background-color: #3671BF;
+    background: linear-gradient(to bottom, #77ABD9 0%, #010070 100%);
+    border-top: 1px solid #333;
+    border-bottom: solid 1px #333;
+}
+nav ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul.menu li {
+    float: left;
+}
+
+nav ul.menu li a {
+    display: block;
+    padding: 8px 32px;
+    color: #77ABD9;
+    text-decoration: none;
+    border-right: 1px solid white;
+}
+
+nav ul.menu li.active a {
+    background-color: #77ABD9;
+    color: white;
+}
+nav ul.menu li a:hover {
+    background-color: #77ABD9;
+    color: #3671BF;
+}
+}
+/*end of new nav bar*/
+
 #navbar {
   display: flex;
   justify-content: flex-end;
