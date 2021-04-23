@@ -10,7 +10,7 @@ loadButton.addEventListener('click', () => {
 
 fetchButton.addEventListener('click', () => {
     let pokeId = prompt("Pokemon Name:").toLocaleLowerCase()
-    console.log(pokeId)
+    console.log(pokeId);
     getAPIData(`https://pokeapi.co/api/v2/pokemon/${pokeId}`).then(
         data => populatePokecard(data)
     ).catch(error => console.log(error))
@@ -48,7 +48,7 @@ async function getAPIData(url) {
 }
 
 function loadPage() {
-    getAPIData(`https://pokeapi.co/api/v2/pokemon/?limit=50`).then(
+    getAPIData(`https://pokeapi.co/api/v2/pokemon/?limit=100`).then(
    async (data) => {
             for (const singlePokemon of data.results) {
                 await getAPIData(singlePokemon.url).then(
@@ -106,7 +106,7 @@ function populateCardBack(pokemon) {
             backType.textContent = pokeType.type.name;
             pokeBack.appendChild(backType)
             pokeBack.classList.add(pokemon.types[0].type.name)
-            pokeBack.classList.add(pokemon.types[0].className)
+            
         })
 
         return pokeBack
