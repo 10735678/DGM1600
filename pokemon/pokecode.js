@@ -1,9 +1,17 @@
 const pokeGrid = document.querySelector('.pokeGrid')
 const loadButton = document.querySelector('.loadPokemon')
-
+const fetchButton = document.querySelector('.fetchPokemonById')
 
 loadButton.addEventListener('click', () => {
     loadPage()
+})
+
+fetchButton.addEventListener('click', () => {
+    let pokeId = prompt("Pokemon Name:");
+    console.log(pokeId)
+    getAPIData(`https://pokeapi.co/api/v2/pokemon/${pokeId}`).then(
+        data => populatePokecard(data)
+    ).catch(error => console.log(error))
 })
 
 async function getAPIData(url) {
@@ -65,7 +73,7 @@ function populateCardBack(pokemon) {
     let pokeBack = document.createElement('div')
     pokeBack.className = 'card_face card_face-back'
     let backLabel = document.createElement('p') 
-        backLabel.textContent = `Back of card`
+        backLabel.textContent = `Moves: ${pokemon.moves.length}`
         pokeBack.appendChild(backLabel)
         return pokeBack
     }
@@ -75,7 +83,7 @@ function populateCardBack(pokemon) {
             return `00${pokemon.id}`
         } else if(pokemon.id > 9 && pokemon.id < 100) {
             return `0${pokemon.id}`
-        } else if(pokemon.id > 99 && pokemon.id < 1000) {
+        } else if(pokemon.id > 99 && pokemon.id < 810) {
             return `${pokemon.id}`
         }
     }
