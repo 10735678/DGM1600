@@ -1,17 +1,40 @@
 const pokeGrid = document.querySelector('.pokeGrid')
 const loadButton = document.querySelector('.loadPokemon')
 const fetchButton = document.querySelector('.fetchPokemonById')
+const newButton = document.querySelector('.newPokemon')
+
 
 loadButton.addEventListener('click', () => {
     loadPage()
 })
 
 fetchButton.addEventListener('click', () => {
-    let pokeId = prompt("Pokemon Name:");
+    let pokeId = prompt("Pokemon Name:").toLocaleLowerCase()
     console.log(pokeId)
     getAPIData(`https://pokeapi.co/api/v2/pokemon/${pokeId}`).then(
         data => populatePokecard(data)
     ).catch(error => console.log(error))
+})
+
+class Pokemon {
+    constructor(name, height, weight, abilities, moves) {
+        this.name = name
+        this.height = height
+        this.weight = weight
+        this.abilities = abilities
+        this.moves = moves
+    }
+}
+
+
+newButton.addEventListener('click', () => {
+    let pokeName = prompt("Name your Pokemon!")
+    let pokeHeight = prompt("How tall are they?")
+    let pokeWeight = prompt("How much do they weigh?")
+    let pokeAbilities = prompt("Top abilities?")
+    let pokeMoves = prompt("Moves?")
+    let newPokemon = new Pokemon(pokeName, pokeHeight, pokeWeight, pokeAbilities, pokeMoves)
+    populatePokecard(newPokemon)
 })
 
 async function getAPIData(url) {
@@ -25,7 +48,7 @@ async function getAPIData(url) {
 }
 
 function loadPage() {
-    getAPIData(`https://pokeapi.co/api/v2/pokemon/?limit=809`).then(
+    getAPIData(`https://pokeapi.co/api/v2/pokemon/?limit=50`).then(
    async (data) => {
             for (const singlePokemon of data.results) {
                 await getAPIData(singlePokemon.url).then(
@@ -59,12 +82,12 @@ function populateCardFront(pokemon) {
     console.log(pokemon)
     let pokeFront = document.createElement('div')
     pokeFront.className = 'card_face card_face-front'
-    let frontLabel = document.createElement('p')
-    frontLabel.textContent = pokemon.name
+    /*let frontLabel = document.createElement('p')
+    frontLabel.textContent = pokemon.name*/
     let frontImage = document.createElement('img')
     frontImage.src = `images/${getImageFileName(pokemon)}.png`
     pokeFront.appendChild(frontImage)
-    pokeFront.appendChild(frontLabel)
+  //pokeFront.appendChild(frontLabel)
     return pokeFront
 }
 
@@ -72,8 +95,9 @@ function populateCardFront(pokemon) {
 function populateCardBack(pokemon) {
     let pokeBack = document.createElement('div')
     pokeBack.className = 'card_face card_face-back'
+
     let backLabel = document.createElement('p') 
-        backLabel.textContent = `Moves: ${pokemon.moves.length}`
+        backLabel.textContent = pokemon.name /*`Moves: ${pokemon.moves.length}`*/
         pokeBack.appendChild(backLabel)
         return pokeBack
     }
