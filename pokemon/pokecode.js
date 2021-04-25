@@ -109,19 +109,19 @@ function populatePokeCard(singlePokemon) {
   pokeCard.appendChild(populateCardBack(singlePokemon))
 
   pokeScene.appendChild(pokeCard)
-  //pokeGrid.appendChild(pokeScene)
+  pokeGrid.appendChild(pokeScene)
 }
 
 function populateCardFront(pokemon) {
     console.log(pokemon)
     let pokeFront = document.createElement('div')
     pokeFront.className = 'card_face card_face-front'
-
+    let frontLabel = document.createElement('p')
+    frontLabel.textContent = pokemon.name
     let frontImage = document.createElement('img')
-    frontImage.src = `images/${getImageFileName(pokemon)}.png`
+    frontImage.src = getImageFileName(pokemon)
     pokeFront.appendChild(frontImage)
-
-    
+    pokeFront.appendChild(frontLabel)
     return pokeFront
 }
 
@@ -146,10 +146,11 @@ function populateCardBack(pokemon) {
 
     function getImageFileName(pokemon) {
         if (pokemon.id < 10) {
-            return `00${pokemon.id}`
+            return `images/00${pokemon.id}.png`
         } else if(pokemon.id > 9 && pokemon.id < 100) {
-            return `0${pokemon.id}`
+            return `images/0${pokemon.id}.png`
         } else if(pokemon.id > 99 && pokemon.id < 810) {
-            return `${pokemon.id}`
+            return `images/${pokemon.id}.png`
         }
+        return `https://github.com/fanzeyi/pokemon.json/blob/master/images/749.png`
     }
