@@ -113,7 +113,7 @@ function populatePokeCard(singlePokemon) {
 }
 
 function populateCardFront(pokemon) {
-    console.log(pokemon)
+    //console.log(pokemon)
     let pokeFront = document.createElement('div')
     pokeFront.className = 'card_face card_face-front'
     let frontLabel = document.createElement('p')
