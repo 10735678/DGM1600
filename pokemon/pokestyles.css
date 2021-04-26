@@ -17,11 +17,15 @@
     font-size: 120%;
     text-align:center;
     padding: .5%;
+    box-shadow: 6px 6px 4px black;
 }
 
 .buttons:hover {
     color: navy;
+    box-shadow: none;
+    transition: .5s;
 }
+
 
 
 header {
@@ -85,7 +89,7 @@ a {
     align-items: center;
     flex-direction: column;
     padding: 50px;
-    
+    box-shadow: 6px 6px 4px black;
 }
 
 .card_face-back {
@@ -93,12 +97,12 @@ a {
     background-image: url(/images/pokecard_basic.png);
     transform: rotateY(180deg);
     color: white;
-    font-size: 220%;
+    font-size: 120%;
     padding-top: 130px;
     display: flex;
     justify-content:end;
     flex-direction: column;
-    
+    box-shadow: 6px 6px 4px black;
 }
 
 
@@ -106,49 +110,59 @@ a {
 .fire {
     background-color: red;
     background-image: url(/images/pokecard_fire.png);
+    text-shadow:0px 0px 3px darkred;
 }
 
 .grass {
     background-color: green;
     background-image: url(/images/pokecard_green.png);
+    text-shadow:0px 0px 3px darkgreen;
 }
 
 .bug {
     background-color: lightgreen;
     background-image: url(/images/pokecard_green.png);
+    text-shadow:0px 0px 3px darkred;
 }
 
 .poison {
     background-color: purple;
     background-image: url(/images/pokecard_poison.png);
+    text-shadow:0px 0px 3px darkslateblue;
 }
 
 .water {
     background-color: blue;
     background-image: url(/images/pokecard_water.png);
+    text-shadow:0px 0px 3px darkblue;
 }
 
 .ground {
     background-color: yellow;
     background-image: url(/images/pokecard_rock.png);
+    text-shadow:0px 0px 3px darkorange;
 }
 
 .electric {
     background-color: yellow;
     background-image: url(/images/pokecard_lightning.png);
+    text-shadow:0px 0px 3px black;
 }
 
 .fairy {
     background-color: pink;
     background-image: url(/images/pokecard_fairy.png);
+    text-shadow:0px 0px 3px red;
 }
 
 .normal {
     background-color: rgb(95, 47, 3);
+    text-shadow:0px 0px 3px black;
 }
 
 .dragon {
     background-color:#333;
     background-image: url(/images/pokecard_dragon.png);
+    text-shadow:0px 0px 3px black;
 }
 
