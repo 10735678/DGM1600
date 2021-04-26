@@ -139,6 +139,7 @@ function populateCardBack(pokemon) {
         backLabel.textContent = pokemon.name /*`Moves: ${pokemon.moves.length}`*/
         pokeBack.appendChild(backLabel)
 
+
         pokemon.types.forEach((pokeType) => {
             let backType = document.createElement('p')
             backType.textContent = pokeType.type.name;
@@ -153,6 +154,7 @@ function populateCardBack(pokemon) {
           pokeBack.appendChild(abilityType)
         })
 
+
         return pokeBack
     }
 
@@ -163,7 +165,7 @@ function populateCardBack(pokemon) {
         } else if(pokemon.id > 9 && pokemon.id < 100) {
             return `images/0${pokemon.id}.png`
         } else if(pokemon.id > 99 && pokemon.id < 810) {
-            return `images/${pokemon.id}.png`
-        }
+            return `images/${pokemon.id}.png`}
+
         return `https://github.com/fanzeyi/pokemon.json/blob/master/images/749.png`
     }
