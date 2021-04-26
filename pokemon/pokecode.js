@@ -1,3 +1,6 @@
+  
+import { removeChildren } from '../utils/index.js'
+
 const pokeGrid = document.querySelector('.pokeGrid')
 const loadButton = document.querySelector('.loadPokemon')
 const fetchButton = document.querySelector('.fetchPokemonById')
@@ -31,7 +34,7 @@ fetchButton.addEventListener('click', () => {
 
 
   newButton.addEventListener('click', () => {
- 
+    removeChildren(pokeGrid)
     let pokeName = prompt('Name your Pokemon')
     let pokeHeight = prompt('Height?')
     let pokeWeight = prompt('Weight?')
@@ -84,6 +87,7 @@ async function getAPIData(url) {
 }
 
 function loadPage(offset, limit) {
+  removeChildren(pokeGrid)
     getAPIData(
       `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${100}`,
     ).then(async (data) => {
