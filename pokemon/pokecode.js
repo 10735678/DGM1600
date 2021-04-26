@@ -9,7 +9,8 @@ loadButton.addEventListener('click', () => {
 })
 
 fetchButton.addEventListener('click', () => {
-    let pokeId = prompt('Pokemon ID').toLowerCase()
+    let pokeId = prompt("Pokemon ID").toLowerCase()
+    console.log(pokeId)
     getAPIData(`https://pokeapi.co/api/v2/pokemon/${pokeId}`)
       .then((data) => populatePokeCard(data))
       .catch((error) => console.log(error))
@@ -145,6 +146,7 @@ function populateCardBack(pokemon) {
     }
 
     function getImageFileName(pokemon) {
+      let pokeId
         if (pokemon.id < 10) {
             return `images/00${pokemon.id}.png`
         } else if(pokemon.id > 9 && pokemon.id < 100) {
