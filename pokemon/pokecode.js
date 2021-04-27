@@ -12,6 +12,7 @@ loadButton.addEventListener('click', () => {
 })
 
 fetchButton.addEventListener('click', () => {
+  removeChildren(pokeGrid)
     let pokeId = prompt("Pokemon ID").toLowerCase()
     console.log(pokeId)
     getAPIData(`https://pokeapi.co/api/v2/pokemon/${pokeId}`)
@@ -100,7 +101,6 @@ function loadPage(offset, limit) {
   }
 
 function populatePokeCard(singlePokemon) {
- 
   let pokeScene = document.createElement('div')
   pokeScene.className = 'scene'
   let pokeCard = document.createElement('div')
