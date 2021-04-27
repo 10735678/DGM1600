@@ -125,6 +125,7 @@ function populateCardFront(pokemon) {
     frontLabel.textContent = pokemon.name
     let frontImage = document.createElement('img')
     frontImage.src = getImageFileName(pokemon)
+
     pokeFront.appendChild(frontImage)
     //pokeFront.appendChild(frontLabel)
     return pokeFront
@@ -171,7 +172,8 @@ function populateCardBack(pokemon) {
         } else if(pokemon.id > 9 && pokemon.id < 100) {
             return `images/0${pokemon.id}.png`
         } else if(pokemon.id > 99 && pokemon.id < 810) {
-            return `images/${pokemon.id}.png`}
-
-        return `https://github.com/fanzeyi/pokemon.json/blob/master/images/749.png`
-    }
+            return `images/${pokemon.id}.png`} 
+          else {  
+            return `images/ball.png`}
+          }
+    
