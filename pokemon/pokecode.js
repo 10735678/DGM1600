@@ -17,7 +17,7 @@ fetchButton.addEventListener('click', () => {
     console.log(pokeId)
     getAPIData(`https://pokeapi.co/api/v2/pokemon/${pokeId}`)
       .then((data) => populatePokeCard(data))
-      .catch((error) => console.log(error))
+      .catch((error) => console.log(error)) 
   })
 
   class Pokemon {
