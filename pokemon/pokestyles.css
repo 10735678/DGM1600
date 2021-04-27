@@ -5,6 +5,12 @@
     
 }
 
+h1 {
+    color:White;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+}
+
 .buttons {
     background-color: #999;
     color: white;
