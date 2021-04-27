@@ -139,6 +139,12 @@ function populateCardBack(pokemon) {
         backLabel.textContent = pokemon.name /*`Moves: ${pokemon.moves.length}`*/
         pokeBack.appendChild(backLabel)
 
+      //Trying Back images
+      let backImage = document.createElement('img')
+      backImage.src = getImageFileName(pokemon)
+      pokeBack.appendChild(backImage)
+      //end of back image
+
 
         pokemon.types.forEach((pokeType) => {
             let backType = document.createElement('p')

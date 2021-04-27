@@ -92,19 +92,23 @@ a {
     box-shadow: 6px 6px 4px black;
 }
 
+
 .card_face-back {
     background: #333;
     background-image: url(/images/pokecard_basic.png);
     transform: rotateY(180deg);
     color: white;
     font-size: 120%;
-    padding-top: 130px;
+    padding: 30px 50px;
     display: flex;
-    justify-content:end;
+    justify-content:space-evenly;
     flex-direction: column;
     box-shadow: 6px 6px 4px black;
 }
 
+.title {
+    font-size: 70px;
+}
 
 
 .fire {
