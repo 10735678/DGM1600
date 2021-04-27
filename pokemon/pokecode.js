@@ -145,14 +145,14 @@ function populateCardBack(pokemon) {
       pokeBack.appendChild(backImage)
       //end of back image
 
-
+      //type
         pokemon.types.forEach((pokeType) => {
             let backType = document.createElement('p')
             backType.textContent = pokeType.type.name;
             pokeBack.appendChild(backType)
             pokeBack.classList.add(pokemon.types[0].type.name)
         })
-
+      //abilities
         pokemon.abilities.forEach((pokeAbility) => {
           //console.log(pokeType.type.name)
           let abilityType = document.createElement('p')

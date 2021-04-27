@@ -98,10 +98,10 @@ a {
     background-image: url(/images/pokecard_basic.png);
     transform: rotateY(180deg);
     color: white;
-    font-size: 120%;
-    padding: 30px 50px;
+    font-size: 110%;
+    padding: 5px 40px 20px 40px;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     flex-direction: column;
     box-shadow: 6px 6px 4px black;
 }
