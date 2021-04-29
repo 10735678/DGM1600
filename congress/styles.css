@@ -1,55 +1,38 @@
+
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
-h1 {
-    text-align: center;
-}
-
-.buttonHeader {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 16px;
-}
-
-.buttons {
-    height: 50px;
-    width: 100px;
-}
-
 .congressGrid {
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem;
-    
 }
 
 .figureDiv {
-    margin: .5em;
-    padding: 5px;
-    
+    margin: 6px;
+    padding: 6px;
+    border: 1px solid red;
+    box-shadow: 3px 3px 3px black;
 }
 
 figure {
-    display: flex;
-    flex-direction: column;
-    width: 125px;
-    
+    width: 100px;
 }
 
 figcaption {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
-img {
-    border-radius: 10%;
-    box-shadow: 1px 1px 3px black;
-    margin: 5px;
+.fa-republican {
+    color: red;
 }
 
-.buttons {
-    color: white;
-    background-color: navy;
-    border-radius: 5%;
+.fa-democrat {
+    color: blue;
+}
+
+.fa-mitten {
+    color: green;
 }
