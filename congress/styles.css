@@ -4,15 +4,20 @@
     box-sizing: border-box;
 }
 
+header {
+    text-align: center;
+    margin: 50px;
+}
+
 .congressGrid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .figureDiv {
     margin: 6px;
     padding: 6px;
-    border: 1px solid red;
     box-shadow: 3px 3px 3px black;
 }
 
