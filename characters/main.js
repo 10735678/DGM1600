@@ -48,3 +48,5 @@ function populateDOM(characters) {
     })
 }
 
+
+
