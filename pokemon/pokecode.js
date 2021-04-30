@@ -6,7 +6,6 @@ const loadButton = document.querySelector('.loadPokemon')
 const fetchButton = document.querySelector('.fetchPokemonById')
 const newButton = document.querySelector('.newPokemon')
 
-
 loadButton.addEventListener('click', () => {
     loadPage()
 })
