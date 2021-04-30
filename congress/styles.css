@@ -17,17 +17,24 @@ header {
 
 .figureDiv {
     margin: 6px;
-    padding: 6px;
-    box-shadow: 3px 3px 3px black;
+    padding: 3px;
+    box-shadow: 3px 3px 8px black;
+    border-radius: 10%;
 }
 
 figure {
     width: 100px;
 }
 
+img {
+    border-radius: 10px;
+}
+
+
 figcaption {
     display: flex;
     justify-content: space-between;
+    font-size: 9px;
 }
 
 .fa-republican {
