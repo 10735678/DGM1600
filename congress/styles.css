@@ -47,7 +47,7 @@ img {
 figcaption {
     display: flex;
     justify-content: space-between;
-    font-size: 9px;
+    font-size: 90%;
 }
 
 .fa-republican {
