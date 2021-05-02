@@ -10,9 +10,6 @@ main {
 }
 
 .shipView {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .message-text {
