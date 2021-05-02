@@ -22,10 +22,7 @@ function populateNav() {
     starships.forEach((starship) => {
         let anchorWrap = document.createElement('a')
         anchorWrap.href = '#'
-        anchorWrap.addEventListener('click', () => {
-            console.log(`You just clicked on ${starship.name}`)
-            populateShipView(starship)
-        })
+        anchorWrap.addEventListener('click', () => populateShipView(starship))
         let listItem = document.createElement('li')
         listItem.textContent = starship.name
 
@@ -40,9 +37,9 @@ function populateShipView(shipData) {
     let shipNum = getLastNumber(shipData.url)
     shipImage.src = `https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg`
     shipImage.addEventListener('error', () => {
-        console.log(`Sorry! Image not available!`)
+        console.log(`Oops! missing image`)
         shipImage.hidden = true
-        dialog.classList.toggle("is-active")
+        dialog.classList.toggle("is-active") // genius level!
     })
     shipView.appendChild(shipImage)
 }

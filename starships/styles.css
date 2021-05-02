@@ -9,8 +9,6 @@ main {
     height: 120vh;
 }
 
-.shipView {
-}
 
 .message-text {
     text-align: center;
@@ -19,16 +17,15 @@ main {
     color: black;
 }
 
+nav {
+    width:400px;
+}
 img, nav {
     z-index: 1;
     position: relative;
-    display: flex;
     padding: 20px;
 }
 
-img {
-    padding: 100px;
-}
 
 a {
     text-decoration: none;
