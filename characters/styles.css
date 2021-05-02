@@ -3,16 +3,25 @@
     box-sizing: border-box;
 }
 
+header {
+    
+    padding: 50px;
+}
+
 #main {
     display: flex;
     flex-wrap: wrap;
+    background-color: black;
+    background-image:url(/images/swbattle.jpg);
 }
 
 figure > img {
     height: 200px;
     border-radius: 1rem;
-    margin: 3px;
-    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+    margin: 8px;
+    box-shadow: 0px 0px 10px lightblue;
+    border:1px solid blue;
+
 }
 
 figure > img:hover {
