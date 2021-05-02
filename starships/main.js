@@ -44,7 +44,7 @@ function populateShipView(shipData) {
         shipImage.hidden = true
         dialog.classList.toggle("is-active")
     })
-    shipView.appendChild(shipImage)
+    //shipView.appendChild(shipImage)
 }
 
 populateNav()
